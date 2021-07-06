@@ -1,0 +1,4 @@
+kubectl create -f kubernetes-demo.yaml // standard pod [ application ]
+kubectl create -f service.yaml // services group to link to pod  [application ]
+kubectl create -f ingress.yaml // routing to difference service by routing
+kubectl create -f deployment.yaml // create deploy to external entry point
