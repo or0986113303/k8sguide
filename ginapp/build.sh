@@ -1,0 +1,1 @@
+docker build -t mirchen/ginappk8s .
