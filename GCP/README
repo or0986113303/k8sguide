@@ -1,0 +1,15 @@
+gcloud projects list // list all of project on google cloud platform
+
+gcloud config set project wc71226 // set config for project id
+
+gcloud compute zones list // list all of zone at computer can be used
+
+gcloud container clusters create mittest \
+--machine-type=n1-standard-1 \
+--num-nodes=2 \
+--disk-size=50 \
+--scopes "https://www.googleapis.com/auth/projecthosting,storage-rw"
+
+kubectl version
+
+https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=wc71226
