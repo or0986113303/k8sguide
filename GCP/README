@@ -10,7 +10,10 @@ gcloud container clusters create mittest \
 --disk-size=50 \
 --scopes "https://www.googleapis.com/auth/projecthosting,storage-rw"
 
-tutorial url : https://gcpug-tw.gitbook.io/google-cloud-platform-in-practice/google-cloud-shang-de-yun-suan-fu-wu/container-engine/ji-ben-cao-zuo
+tutorial url : 
+
+// https://gcpug-tw.gitbook.io/google-cloud-platform-in-practice/google-cloud-shang-de-yun-suan-fu-wu/container-engine/ji-ben-cao-zuo
+// https://www.yannyann.com/2018/02/wp-ssl-ubuntu-lamp-nginx-varnish-redis-2/#%E5%9C%A8%E9%9B%BB%E8%85%A6%E4%B8%8A%E5%AE%89%E8%A3%9D-gcloud-sdk-%E8%97%89%E6%AD%A4%E9%80%A3%E7%B7%9A%E5%88%B0%E5%9F%B7%E8%A1%8C%E5%80%8B%E9%AB%94
 
 kubectl version
 
