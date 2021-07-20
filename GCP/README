@@ -10,6 +10,32 @@ gcloud container clusters create mittest \
 --disk-size=50 \
 --scopes "https://www.googleapis.com/auth/projecthosting,storage-rw"
 
+tutorial url : https://gcpug-tw.gitbook.io/google-cloud-platform-in-practice/google-cloud-shang-de-yun-suan-fu-wu/container-engine/ji-ben-cao-zuo
+
 kubectl version
 
-https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=wc71226
+// GCP install
+
+curl https://sdk.cloud.google.com | bash
+
+// After installation re start shell env
+
+exec -l $SHELL 
+
+or
+
+source ~/.bashrc
+
+// How to set up the GCP SDK and bind kubectl to GCP
+
+gcloud init 
+
+// https://console.cloud.google.com/apis/api/container.googleapis.com/overview?project=wc71226
+
+// set up cert and link to project
+
+gcloud container clusters get-credentials mittest --zone asia-east1-b --project wc71226
+
+// list describe cluster by project name
+
+gcloud container clusters describe mittest --zone asia-east1-b --project wc71226
