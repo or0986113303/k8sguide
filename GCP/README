@@ -42,3 +42,21 @@ gcloud container clusters get-credentials mittest --zone asia-east1-b --project 
 // list describe cluster by project name
 
 gcloud container clusters describe mittest --zone asia-east1-b --project wc71226
+
+// list the clusters
+
+kubectl config get-contexts
+
+// switch kubenetes cluster command
+
+kubectl config use-context gke_wc71226_asia-east1-b_mittest
+
+kubectl config use-context minikube
+
+// create name space
+
+kubectl create namespace develop
+
+// set some namespace for ant context of cluster
+
+kubectl config set-context "context name" --namespace=develop
