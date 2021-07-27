@@ -1,1 +1,1 @@
-docker build -t mirchen/ginappk8s .
+docker build -t mirchen/ginappk8s:latest .

@@ -8,7 +8,7 @@ import (
 
 func main() {
 	router := gin.Default()
-	router.GET("/ping", func(c *gin.Context) {
+	router.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "PONG")
 	})
 	router.Run(":8080")
